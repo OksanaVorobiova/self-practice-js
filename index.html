@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form class="form">
+    <fieldset class="fieldset">
+        <legend>Select a delivery type</legend>
+        <div class="radio-group">
+            <input type="radio" id="self-pickup" name="delivery" value="self-pickup" />
+            <label for="self-pickup">Self-pickup</label>
+            <input type="radio" id="courier" name="delivery" value="courier" />
+            <label for="courier">Courier</label>
+            <input type="radio" id="post-office" name="delivery" value="post-office" />
+            <label for="post-office">Post-office</label>
+        </div>
+        <button type="submit">Send my answer</button>
+    </fieldset>
+    </form>
+    <p class="message"></p>
+    <script src="./script.js" type="module"></script>
+</body>
