@@ -1,19 +1,24 @@
-import css from "./EventBoard.module.css";
-import PropTypes from 'prop-types';
-import {Event} from '../Event/Event';
+//import css from "./EventBoard.module.css";
+import { Event } from "./Event/Event";
+import { Board } from "./EventBoard.styled";
 
-export const EventBoard = ({events}) => {
-    return (
-        <div className={css.eventBoard}>
-            {events.map(({name, location, speaker, type, time}) => <Event key={name} name={name}
-                location={location}
-                speaker={speaker}
-                type={type}
-                start={time.start}
-                end={time.end}></Event>)}
-        </div>
-    );
-}
+export const EventBoard = ({ events }) => {
+  return (
+    <Board>
+      {events.map(({ name, location, speaker, type, time }) => (
+        <Event
+          key={name}
+          name={name}
+          location={location}
+          speaker={speaker}
+          type={type}
+          start={time.start}
+          end={time.end}
+        ></Event>
+      ))}
+    </Board>
+  );
+};
 
 //EventBoard.propTypes = {
 //    events: PropTypes.array,

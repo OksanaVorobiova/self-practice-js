@@ -44,13 +44,16 @@
 }
 
 .free {
+    composes: chip;
     background-color: var(--color-green);
 }
 
 .paid {
+    composes: chip;
     background-color: var(--color-blue);
 }
 
 .vip {
+    composes: chip;
     background-color: var(--color-red);
 }
